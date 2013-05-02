@@ -1,0 +1,68 @@
+{dede:include filename='common.header.top.htm'/}
+<body class="index">
+{dede:include filename='common.header.shortcut.htm'/}
+{dede:include filename='common.header.nav.htm'/}
+
+<!-- begin #page - the container for everything but header -->
+<div id="page">
+	<div class="hero-unit">
+		<div class="container">
+			<h1>{dede:field.typename/}</h1>
+		</div>
+		<!--close container--> 
+	</div>
+	<!--close hero-unit--> 
+	
+	<!--notice how sliders and are outside the this main content div-->
+	<div class="container clearfix" id="main-content">
+		<div class="pagination pagination-right no-margin pagination-mini">
+			<ul>
+				{dede:pagelist listsize='2' listitem='pre pageno next'/}
+			</ul>
+		</div>
+		<div class="row-fluid">
+			<!--
+			<div class="filter-box clearfix"><span id="filter">Filter<i class="icon-sort"></i></span>
+				<ul class='sort' id="option">
+					<li><a class="active" href="#" data-filter="*">All</a></li>
+					<li><a href="#" data-filter=".letter-press">Letter Press</a></li>
+					<li><a href="#" data-filter=".identity">Identity</a></li>
+					<li><a href="#" data-filter=".motion">Motion</a></li>
+					<li><a href="#" data-filter=".art">Art</a></li>
+					<li><a href="#" data-filter=".web-design">Web Design</a></li>
+					<li><a href="#" data-filter=".featured">Featured</a></li>
+				</ul>
+			</div>
+			-->
+			<ul class="gallery four_col clearfix">
+				<!-- three_col four_col two_col -->
+				{dede:list pagesize='1'}
+				<li class="letter-press featured"> <a class="hover" href="[field:arcurl/]"> <img src="[field:litpic/]" alt="" /><span class="plus"></span></a>
+					<div class="entry-summary">
+						<h4><a href="[field:arcurl/]">[field:title/]</a></h4>
+					</div>
+					<!--close entry-summary--> 
+				</li>
+				{/dede:list}
+			</ul>
+			
+			<div class="pagination pagination-centered no-margin pagination-footer pagination-mini">
+				<ul>
+					{dede:pagelist listsize='2' listitem='pre pageno next'/}
+				</ul>
+			</div>
+		</div>
+		<!--close row-fluid--> 
+		
+	</div>
+	<!--close .container role="main-content" --> 
+    {dede:include filename='common.footer.htm'/}
+<!-- close #page--> 
+
+{dede:include filename='common.footer.js.htm'/}
+
+<!-- scripts on this page ================ --> 
+<script src='assets/js/jquery.isotope.min.js'></script><!--filter and masonry script--> 
+<script src='assets/js/isotope_custom.js'></script><!--custom settings--> 
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!-- begin .header-->
+<header class="header  clearfix">
+	<img src="{dede:global.cfg_templets_skin/}/assets/images/print-logo.png" class="print logo" alt="{dede:global.cfg_webname/}" />
+	<div class="container"> 
+		
+		<!-- begin #main_menu -->
+		<nav id="main_menu">
+			<ul class="accordmobile">
+				{dede:php}
+					if($refObj->Fields['typeid'] == 0)
+					{
+						echo "<li class='active'><a href='".$GLOBALS['cfg_cmsurl']."'>首页</a></li>";
+					}
+					else
+					{
+						echo "<li><a href='".$GLOBALS['cfg_cmsurl']."'>首页</a></li>";
+					}
+				{/dede:php}
+				{dede:channel type='top' row='8' currentstyle="<li class='active'><a href='~typelink~'>~typename~</a> </li>"}
+					<li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+				{/dede:channel}
+			</ul>
+		</nav>
+		<!-- close / #main_menu --> 
+		
+		<!-- begin #logo -->
+		<div id="logo">
+			<a href="{dede:global.cfg_cmsurl/}">
+				<img alt="" src="{dede:global.cfg_templets_skin/}/assets/images/trans.gif" />
+				<em>{dede:global.cfg_webname/}</em>
+				<!--effing ie7 support-->
+			</a>
+		</div>
+		<!-- end #logo --> 
+		
+	</div>
+	<!-- close / .container--> 
+</header>
+<!-- close /.header --> 

@@ -1,0 +1,83 @@
+{dede:include filename='common.header.top.htm'/}
+<body class="portfolio-single">
+{dede:include filename='common.header.shortcut.htm'/}
+{dede:include filename='common.header.nav.htm'/}
+
+<!-- begin #page - the container for everything but header -->
+<div id="page">
+	<div class="hero-unit">
+		<div class="container">
+			<h2>{dede:field.title/}</h2>
+		</div>
+		<!--close container--> 
+	</div>
+	<!--close hero-unit-->
+	
+	<div class="container clearfix" id="main-content"><!--begin main content-->
+		<div class="row-fluid portfolio-detail"><!--begin row-fluid-->
+			
+			<div class="span7 offset1 image-slider" role="image-slider"> 
+				
+				<!-- Begin Carousel -->
+				<div id="carousel" class="flexslider">
+					<ul class="slides">
+						{dede:php}
+							$dir = substr($refObj->Fields['carousel'], 0, strrpos($refObj->Fields['carousel'] , '/') + 1);
+							$ext = substr($refObj->Fields['carousel'], strrpos($refObj->Fields['carousel'], '.'));
+							for($i = 1; $i <= $refObj->Fields['carousel_num']; $i++)
+							{
+								$picname = $dir.$i.$ext;
+								echo '<li style="background-image: url('.$picname.');"><img src="'.$GLOBALS['cfg_templets_skin'].'/assets/images/trans.gif" alt=""></li>';
+							}
+						{/dede:php}
+					</ul>
+				</div>
+				<!-- End Carousel --> 
+				
+				<!-- Begin Slider -->
+				<div id="slider" class="flexslider">
+					<ul class="slides">
+						{dede:php}
+							$dir = substr($refObj->Fields['carousel'], 0, strrpos($refObj->Fields['carousel'] , '/') + 1);
+							$ext = substr($refObj->Fields['carousel'], strrpos($refObj->Fields['carousel'], '.'));
+							for($i = 1; $i <= $refObj->Fields['carousel_num']; $i++)
+							{
+								$picname = $dir.$i.$ext;
+								$picLRGname = $dir.$i.'-lrg'.$ext;
+								echo '<li><a class="zoom-image fancyme" data-fancybox-group="portfolio" href="'.$picLRGname.'">View Larger Image</a> <img src="'.$picname.'" alt=""></li>';
+							}
+						{/dede:php}
+					</ul>
+				</div>
+				<!-- End Slider --> 
+				
+			</div>
+			<!-- close span7 primary-column-->
+			
+			<section class="span4 project-description" role="project-description">
+				<p>{dede:field.content/}</p>
+				<h6>Categories:</h6>
+				<p> <a href="{dede:field.typelink/}">{dede:field.typename/}</a> </p>
+			</section>
+			<!--close project details section span4-->
+			<section class="row-fluid related">
+				<h3 class="span5">{dede:prenext get='pre'/}</h3>
+				<h3 class="span5">{dede:prenext get='next'/}</h3>
+			</section>
+		</div>
+		<!--close row-fluid portfolio-detail--> 
+		
+		<!--close .container id="main-content" --> 
+	</div>
+	
+	{dede:include filename='common.footer.htm'/}
+	<!-- close #page--> 
+
+{dede:include filename='common.footer.js.htm'/}
+<script src="{dede:global.cfg_templets_skin/}/assets/js/fancybox/source/jquery.fancybox.pack.js"></script><!--main fancybox--> 
+<script src="{dede:global.cfg_templets_skin/}/assets/js/fancybox/source/helpers/jquery.fancybox-media.js"></script><!--fancybox media--> 
+<script src="{dede:global.cfg_templets_skin/}/assets/js/fancybox/source/helpers/jquery.fancybox-buttons.js"></script><!--fancybox buttons--> 
+<script src="{dede:global.cfg_templets_skin/}/assets/js/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script><!--fancybox thumbs--> 
+<script src="{dede:global.cfg_templets_skin/}/assets/js/fancybox_init.js"></script><!--fancybox load--> 
+</body>
+</html>
