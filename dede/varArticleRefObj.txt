@@ -1,0 +1,277 @@
+Archives Object
+(
+    [TypeLink] => TypeLink Object
+        (
+            [typeDir] => 
+            [dsql] => DedeSql Object
+                (
+                    [linkID] => Resource id #46
+                    [dbHost] => localhost
+                    [dbUser] => root
+                    [dbPwd] => phpsys
+                    [dbName] => hunton86
+                    [dbPrefix] => dede_
+                    [result] => Array
+                        (
+                            [me] => 0
+                            [one] => Resource id #63
+                            [tag] => Resource id #62
+                        )
+
+                    [queryString] => SELECT * FROM `dede_crisparticleslide` WHERE `aid` = '2' LIMIT 0,1;
+                    [parameters] => 
+                    [isClose] => 
+                    [safeCheck] => 
+                    [showError] => 
+                    [recordLog] => 
+                    [isInit] => 1
+                    [pconnect] => 
+                )
+
+            [TypeID] => 4
+            [baseDir] => C:/wnmp/nginx1.3.6/html
+            [modDir] => /dede57/templets
+            [indexUrl] => http://localhost/dede57
+            [indexName] => 主页
+            [TypeInfos] => Array
+                (
+                    [id] => 4
+                    [reid] => 0
+                    [topid] => 0
+                    [sortrank] => 50
+                    [typename] => 生活用品
+                    [typedir] => {cmspath}/a/shenghuoyongpin
+                    [isdefault] => 1
+                    [defaultname] => index.html
+                    [issend] => 0
+                    [channeltype] => 17
+                    [maxpage] => -1
+                    [ispart] => 0
+                    [corank] => 0
+                    [tempindex] => hunton86/portfolio-masonry.htm
+                    [templist] => hunton86/portfolio-masonry.htm
+                    [temparticle] => hunton86/portfolio-single.htm
+                    [namerule] => {typedir}/{Y}/{M}{D}/{aid}.html
+                    [namerule2] => {typedir}/list_{tid}_{page}.html
+                    [modname] => default
+                    [description] => 
+                    [keywords] => 
+                    [seotitle] => 
+                    [moresite] => 0
+                    [sitepath] => {cmspath}/a/shenghuoyongpin
+                    [siteurl] => 
+                    [ishidden] => 0
+                    [cross] => 0
+                    [crossid] => 
+                    [content] => &nbsp;
+                    [smalltypes] => 
+                    [ctypename] => Crisp文章
+                    [addtable] => dede_crisparticleslide
+                    [issystem] => 0
+                )
+
+            [SplitSymbol] =>  > 
+            [valuePosition] => <a href='http://localhost/dede57'>主页</a> > <a href='/dede57/a/shenghuoyongpin/'>生活用品</a>
+            [valuePositionName] => 
+            [OptionArrayList] => 
+        )
+
+    [ChannelUnit] => ChannelUnit Object
+        (
+            [ChannelInfos] => Array
+                (
+                    [id] => 17
+                    [nid] => ch17
+                    [typename] => Crisp文章
+                    [maintable] => dede_archives
+                    [addtable] => dede_crisparticleslide
+                    [addcon] => archives_add.php
+                    [mancon] => content_list.php
+                    [editcon] => archives_edit.php
+                    [useraddcon] => archives_add.php
+                    [usermancon] => content_list.php
+                    [usereditcon] => archives_edit.php
+                    [fieldset] => <field:carousel itemname="slide首图" autofield="1" notsend="0" type="imgfile" isnull="true" islist="0" default=""  maxlength="250" page="">
+</field:carousel>
+<field:carousel_num itemname="slide个数" autofield="1" notsend="0" type="int" isnull="true" islist="0" default=""  maxlength="250" page="">
+</field:carousel_num>
+
+                    [listfields] => 
+                    [allfields] => 
+                    [issystem] => 0
+                    [isshow] => 1
+                    [issend] => 0
+                    [arcsta] => -1
+                    [usertype] => 
+                    [sendrank] => 0
+                    [isdefault] => 0
+                    [needdes] => 1
+                    [needpic] => 1
+                    [titlename] => 标题
+                    [onlyone] => 0
+                    [dfcid] => 0
+                )
+
+            [ChannelFields] => Array
+                (
+                    [carousel] => Array
+                        (
+                            [itemname] => slide首图
+                            [autofield] => 1
+                            [notsend] => 0
+                            [type] => imgfile
+                            [isnull] => true
+                            [islist] => 0
+                            [default] => 
+                            [maxlength] => 250
+                            [page] => 
+                            [value] => 
+                            [innertext] => 
+
+                        )
+
+                    [carousel_num] => Array
+                        (
+                            [itemname] => slide个数
+                            [autofield] => 1
+                            [notsend] => 0
+                            [type] => int
+                            [isnull] => true
+                            [islist] => 0
+                            [default] => 
+                            [maxlength] => 250
+                            [page] => 
+                            [value] => 
+                            [innertext] => 
+
+                        )
+
+                )
+
+            [AllFieldNames] => carousel,carousel_num
+            [ChannelID] => 17
+            [ArcID] => 2
+            [dsql] => DedeSql Object
+                (
+                    [linkID] => Resource id #46
+                    [dbHost] => localhost
+                    [dbUser] => root
+                    [dbPwd] => phpsys
+                    [dbName] => hunton86
+                    [dbPrefix] => dede_
+                    [result] => Array
+                        (
+                            [me] => 0
+                            [one] => Resource id #63
+                            [tag] => Resource id #62
+                        )
+
+                    [queryString] => SELECT * FROM `dede_crisparticleslide` WHERE `aid` = '2' LIMIT 0,1;
+                    [parameters] => 
+                    [isClose] => 
+                    [safeCheck] => 
+                    [showError] => 
+                    [recordLog] => 
+                    [isInit] => 1
+                    [pconnect] => 
+                )
+
+            [SplitPageField] => 
+        )
+
+    [dsql] => DedeSql Object
+        (
+            [linkID] => Resource id #46
+            [dbHost] => localhost
+            [dbUser] => root
+            [dbPwd] => phpsys
+            [dbName] => hunton86
+            [dbPrefix] => dede_
+            [result] => Array
+                (
+                    [me] => 0
+                    [one] => Resource id #63
+                    [tag] => Resource id #62
+                )
+
+            [queryString] => SELECT * FROM `dede_crisparticleslide` WHERE `aid` = '2' LIMIT 0,1;
+            [parameters] => 
+            [isClose] => 
+            [safeCheck] => 
+            [showError] => 
+            [recordLog] => 
+            [isInit] => 1
+            [pconnect] => 
+        )
+
+    [Fields] => Array
+        (
+            [id] => 2
+            [typeid] => 4
+            [typeid2] => 0
+            [sortrank] => 1364829053
+            [flag] => p
+            [ismake] => 0
+            [channel] => 17
+            [arcrank] => 0
+            [click] => 186
+            [money] => 0
+            [title] => 抱枕2
+            [shorttitle] => 
+            [color] => 
+            [writer] => admin
+            [source] => 未知
+            [litpic] => /dede57/uploads/allimg/product/shenghuoyongpin/back_cushion/list.jpg
+            [pubdate] => 1364829053
+            [senddate] => 1364819668
+            [mid] => 1
+            [keywords] => 
+            [lastpost] => 0
+            [scores] => 0
+            [goodpost] => 0
+            [badpost] => 0
+            [voteid] => 0
+            [notpost] => 0
+            [description] => 
+            [filename] => 
+            [dutyadmin] => 1
+            [tackid] => 0
+            [mtype] => 0
+            [weight] => 1
+            [reid] => 0
+            [typedir] => {cmspath}/a/shenghuoyongpin
+            [addtable] => dede_crisparticleslide
+            [tags] => 
+            [aid] => 2
+            [position] => <a href='http://localhost/dede57'>主页</a> > <a href='/dede57/a/shenghuoyongpin/'>生活用品</a> > 
+            [phpurl] => /dede57/plus
+            [indexurl] => /dede57
+            [templeturl] => /dede57/templets
+            [memberurl] => /dede57/member
+            [specurl] => /dede57/special
+            [indexname] => 主页
+            [templetdef] => /dede57/templets/hunton86
+            [redirecturl] => 
+            [templet] => 
+            [userip] => 127.0.0.1
+            [displaytype] => st
+            [carousel] => /dede57/uploads/allimg/product/shenghuoyongpin/back_cushion/1.jpg
+            [carousel_num] => 3
+            [typename] => 生活用品
+            [picname] => /dede57/uploads/allimg/product/shenghuoyongpin/back_cushion/list.jpg
+            [image] => <img src='/dede57/uploads/allimg/product/shenghuoyongpin/back_cushion/list.jpg' />
+            [badper] => 0
+            [goodper] => 0
+        )
+
+    [dtp] => DedeTagParse Object
+        (
+            [NameSpace] => dede
+            [TagStartWord] => {
+            [TagEndWord] => }
+            [TagMaxLen] => 64
+            [CharToLow] => 1
+            [IsCache] => 1
+            [TempMkTime] => 1364829046
+            [CacheFile] => C:/wnmp/nginx1.3.6/html/dede57/data/tplcache/\portfolio-single.htmd7c7820bfa8b483f.inc
+            [SourceString] => {dede:include filename='common.header.top.htm'/}
