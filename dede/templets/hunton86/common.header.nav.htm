@@ -9,11 +9,11 @@
 				{dede:php}
 					if($refObj->Fields['typeid'] == 0)
 					{
-						echo "<li class='active'><a href='".$GLOBALS['cfg_cmsurl']."'>首页</a></li>";
+						echo "<li class='active'><a href='".$GLOBALS['cfg_indexurl']."'>首页</a></li>";
 					}
 					else
 					{
-						echo "<li><a href='".$GLOBALS['cfg_cmsurl']."'>首页</a></li>";
+						echo "<li><a href='".$GLOBALS['cfg_indexurl']."'>首页</a></li>";
 					}
 				{/dede:php}
 				{dede:channel type='top' row='8' currentstyle="<li class='active'><a href='~typelink~'>~typename~</a> </li>"}
@@ -25,7 +25,7 @@
 		
 		<!-- begin #logo -->
 		<div id="logo">
-			<a href="{dede:global.cfg_cmsurl/}">
+			<a href="{dede:global.cfg_indexurl/}">
 				<img alt="" src="{dede:global.cfg_templets_skin/}/assets/images/trans.gif" />
 				<em>{dede:global.cfg_webname/}</em>
 				<!--effing ie7 support-->

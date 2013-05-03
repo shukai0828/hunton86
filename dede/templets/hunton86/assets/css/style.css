@@ -56,8 +56,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, .slide-to-top .trigger:hover { c
 
 /* Font Selection
 ================================================== */
-body, input, textarea, button { font-family: "Ubuntu", Sans-Serif;} /* http://css-tricks.com/sans-serif/ */
-.hero-unit h1,.hero-unit h2, .short_headline, .call-to-action h3, h1, h2, h3, h4, h5, h6 {font-family:"Raleway", Sans-Serif;font-weight:300}
+body, input, textarea, button { font-family: "微软雅黑", Sans-Serif;} /* http://css-tricks.com/sans-serif/ */
+.hero-unit h1,.hero-unit h2, .short_headline, .call-to-action h3, h1, h2, h3, h4, h5, h6 {font-family:"微软雅黑", Sans-Serif;font-weight:300}
 .short_headline, .call-to-action h3, h2, h3, h4, h5, h6 {font-weight:500}
 blockquote, .statement, .header .tagline { font-family: Garamond, "Apple Garamond", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;}
 
